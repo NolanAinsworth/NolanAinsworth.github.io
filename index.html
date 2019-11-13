@@ -1,1 +1,36 @@
-Testing!
+<!DOCTYPE html>
+<html lang = "en">
+<head>  
+  <!-- react is pretty neat, and hard -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>  
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>  
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>  
+</head>
+<link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+  <body>
+    <div id="root"></div>
+    <script type="text/jsx">
+
+      class TitleHeading extends React.Component {
+        render() {
+          return <h1>{this.props.message}</h1>;
+        }
+      }
+
+      ReactDOM.render(
+        <TitleHeading message="Portfolio site WIP" />,
+        document.getElementById("root")
+      );
+
+    </script>
+
+    <img src="https://i.imgur.com/3UcmL8a.png" alt="possum" height=100 width=100>
+    <div id="like_button_container"></div>
+
+    <p>Please hire me.</p>
+    <h6>:)</h6>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+  </body>
+</html>
